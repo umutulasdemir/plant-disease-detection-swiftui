@@ -24,6 +24,8 @@
 		2D583A0C2C18DE78006223C3 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D583A0B2C18DE78006223C3 /* CameraView.swift */; };
 		2D583A0E2C18DEB9006223C3 /* SavedDiseasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D583A0D2C18DEB9006223C3 /* SavedDiseasesView.swift */; };
 		2D583A102C18DED0006223C3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D583A0F2C18DED0006223C3 /* MainView.swift */; };
+		2D583A142C18E87A006223C3 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D583A132C18E87A006223C3 /* CameraViewModel.swift */; };
+		2D583A162C18F6B1006223C3 /* AllDiseases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D583A152C18F6B1006223C3 /* AllDiseases.swift */; };
 		2D9E41342BE3D10C005028A5 /* DiseaseResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9E41332BE3D10C005028A5 /* DiseaseResponseView.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		2D583A0B2C18DE78006223C3 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		2D583A0D2C18DEB9006223C3 /* SavedDiseasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDiseasesView.swift; sourceTree = "<group>"; };
 		2D583A0F2C18DED0006223C3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2D583A132C18E87A006223C3 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		2D583A152C18F6B1006223C3 /* AllDiseases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDiseases.swift; sourceTree = "<group>"; };
 		2D9E41332BE3D10C005028A5 /* DiseaseResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseaseResponseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,12 +122,12 @@
 		2D1703342BE2CD7100E3BDF5 /* plant-disease-detection */ = {
 			isa = PBXGroup;
 			children = (
+				2D17033C2BE2CD7400E3BDF5 /* Preview Content */,
 				2D17033B2BE2CD7400E3BDF5 /* plant_disease_detection.entitlements */,
 				2D1703602BE2CE7400E3BDF5 /* Info.plist */,
 				2D5839EE2C18C736006223C3 /* App */,
 				2D5839EC2C18C71E006223C3 /* Core */,
 				2D5839ED2C18C723006223C3 /* Modules */,
-				2D17033C2BE2CD7400E3BDF5 /* Preview Content */,
 			);
 			path = "plant-disease-detection";
 			sourceTree = "<group>";
@@ -272,8 +276,8 @@
 		2D5839FF2C18CDD9006223C3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2D1703632BE2D6FB00E3BDF5 /* FrameView.swift */,
-				2D583A0B2C18DE78006223C3 /* CameraView.swift */,
+				2D583A112C18E4CD006223C3 /* Screens */,
+				2D583A122C18E4D8006223C3 /* Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,6 +285,7 @@
 		2D583A002C18CDDE006223C3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2D583A132C18E87A006223C3 /* CameraViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -312,8 +317,25 @@
 			isa = PBXGroup;
 			children = (
 				2D583A052C18CE09006223C3 /* PlantDiseaseModel.swift */,
+				2D583A152C18F6B1006223C3 /* AllDiseases.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2D583A112C18E4CD006223C3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2D583A0B2C18DE78006223C3 /* CameraView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2D583A122C18E4D8006223C3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2D1703632BE2D6FB00E3BDF5 /* FrameView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,7 +478,9 @@
 				2D583A0C2C18DE78006223C3 /* CameraView.swift in Sources */,
 				2D583A0A2C18DE55006223C3 /* HomeView.swift in Sources */,
 				2D583A0E2C18DEB9006223C3 /* SavedDiseasesView.swift in Sources */,
+				2D583A162C18F6B1006223C3 /* AllDiseases.swift in Sources */,
 				2D1703362BE2CD7100E3BDF5 /* plant_disease_detectionApp.swift in Sources */,
+				2D583A142C18E87A006223C3 /* CameraViewModel.swift in Sources */,
 				2D583A102C18DED0006223C3 /* MainView.swift in Sources */,
 				2D1703622BE2D6E100E3BDF5 /* FrameHandler.swift in Sources */,
 			);
