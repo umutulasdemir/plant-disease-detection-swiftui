@@ -30,10 +30,9 @@ An iOS application using SwiftUI for detecting plant diseases. This app integrat
     git clone https://github.com/umutulasdemir/plant-disease-detection.git
     ```
 
-2. **Navigate to the Flask server directory and install dependencies**
+2. **Install dependencies**
 
     ```bash
-    cd plant-disease-detection/server
     pip install -r requirements.txt
     ```
 
