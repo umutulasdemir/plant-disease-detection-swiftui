@@ -98,4 +98,4 @@ def predict():
 
 
 if __name__ == '__main__':
-    #app.run(debug=True, host="your api address", port=your port)
+    app.run(debug=True, host="192.168.1.3", port=8080)

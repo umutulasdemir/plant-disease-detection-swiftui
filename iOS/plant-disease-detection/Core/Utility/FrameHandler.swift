@@ -60,10 +60,10 @@ class FrameHandler: NSObject, ObservableObject {
             return
         }
 
-        // CGImage'i UIImage'e dönüştür
+        // CGImage to UIImage
         let uiImage = UIImage(cgImage: currentFrame)
 
-        // UIImage'yi Base64'e dönüştür
+        // UIImage to Base64
         if let imageData = uiImage.jpegData(compressionQuality: 0.5) {
             let base64String = imageData.base64EncodedString()
             completion(base64String)

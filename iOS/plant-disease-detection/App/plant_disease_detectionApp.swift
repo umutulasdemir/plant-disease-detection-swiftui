@@ -11,7 +11,7 @@ import SwiftUI
 struct plant_disease_detectionApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

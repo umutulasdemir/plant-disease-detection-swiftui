@@ -1,10 +1,17 @@
+//
+//  CamerView.swift
+//  plant-disease-detection
+//
+//  Created by Umut Ulaş Demir on 11.06.2024.
+//
+
 import SwiftUI
 
 extension Notification.Name {
     static let responseReceived = Notification.Name("responseReceived")
 }
 
-struct ContentView: View {
+struct CameraView: View {
     @StateObject private var model = FrameHandler()
     @State private var isDetecting = false
     @State private var responseText: String? = nil
@@ -52,6 +59,21 @@ struct ContentView: View {
         .onReceive(NotificationCenter.default.publisher(for: .responseReceived)) { notification in
             if let response = notification.object as? String {
                 self.responseText = response
+            }
+        }
+    }
+
+    private func postImageToAPI(base64String: String) {
+        PlantDiseaseService().classifyDisease(imageData: base64String) { result in
+            switch result {
+            case .success(let response):
+                DispatchQueue.main.async {
+                    NotificationCenter.default.post(name: .responseReceived, object: response.disease)
+                }
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    print("Error: \(error.rawValue)")
+                }
             }
         }
     }
