@@ -58,7 +58,7 @@ An iOS application using SwiftUI for detecting plant diseases. This app integrat
 
 ## Demo
 
-![Demo Video](https://github.com/umutulasdemir/plant-disease-detection-swiftui/assets/68897681/3df9940c-5d90-429b-be97-3ffd12634950)
+<img src="https://github.com/umutulasdemir/plant-disease-detection-swiftui/assets/68897681/3df9940c-5d90-429b-be97-3ffd12634950" width="350">
 
 ## Contributing
 
